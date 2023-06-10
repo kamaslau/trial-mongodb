@@ -1,19 +1,23 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   mongodb:
     specifier: latest
-    version: 5.1.0
+    version: 5.6.0
 
 devDependencies:
   '@types/node':
     specifier: latest
-    version: 18.15.11
+    version: 20.2.6
 
 packages:
 
-  /@types/node@18.15.11:
-    resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
+  /@types/node@20.2.6:
+    resolution: {integrity: sha512-GQBWUtGoefMEOx/vu+emHEHU5aw6JdDoEtZhoBrHFPZbA/YNRFfN996XbBASEWdvmLSLyv9FKYppYGyZjCaq/g==}
 
   /@types/webidl-conversions@6.1.1:
     resolution: {integrity: sha512-XAahCdThVuCFDQLT7R7Pk/vqeObFNL3YqRyFZg+AqAP/W1/w3xHaIxuW7WszQqTbIBOPRcItYJIou3i/mppu3Q==}
@@ -22,12 +26,12 @@ packages:
   /@types/whatwg-url@8.2.1:
     resolution: {integrity: sha512-2YubE1sjj5ifxievI5Ge1sckb9k/Er66HyR2c+3+I6VDUUg1TLPdYYTEbQ+DjRkS4nTxMJhgWfSfMRD2sl2EYQ==}
     dependencies:
-      '@types/node': 18.15.11
+      '@types/node': 20.2.6
       '@types/webidl-conversions': 6.1.1
     dev: false
 
-  /bson@5.1.0:
-    resolution: {integrity: sha512-FEecNHkhYRBe7X9KDkdG12xNuz5VHGeH6mCE0B5sBmYtiR/Ux/9vUH/v4NUoBCDr6NuEhvahjoLiiRogptVW0A==}
+  /bson@5.3.0:
+    resolution: {integrity: sha512-ukmCZMneMlaC5ebPHXIkP8YJzNl5DC41N5MAIvKDqLggdao342t4McltoJBQfQya/nHBWAcSsYRqlXPoQkTJag==}
     engines: {node: '>=14.20.1'}
     dev: false
 
@@ -47,12 +51,12 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb@5.1.0:
-    resolution: {integrity: sha512-qgKb7y+EI90y4weY3z5+lIgm8wmexbonz0GalHkSElQXVKtRuwqXuhXKccyvIjXCJVy9qPV82zsinY0W1FBnJw==}
+  /mongodb@5.6.0:
+    resolution: {integrity: sha512-z8qVs9NfobHJm6uzK56XBZF8XwM9H294iRnB7wNjF0SnY93si5HPziIJn+qqvUR5QOff/4L0gCD6SShdR/GtVQ==}
     engines: {node: '>=14.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.201.0
-      mongodb-client-encryption: ^2.3.0
+      mongodb-client-encryption: '>=2.3.0 <3'
       snappy: ^7.2.2
     peerDependenciesMeta:
       '@aws-sdk/credential-providers':
@@ -62,7 +66,7 @@ packages:
       snappy:
         optional: true
     dependencies:
-      bson: 5.1.0
+      bson: 5.3.0
       mongodb-connection-string-url: 2.6.0
       socks: 2.7.1
     optionalDependencies:
