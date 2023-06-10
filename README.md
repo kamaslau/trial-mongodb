@@ -15,7 +15,7 @@ None, as default.
 
 ## Usage
 
-### Start a service group
+### TODO Start a service group
 
 Manage service stack with [Docker Compose](https://docs.docker.com/compose/), through NPM (optional).
 
@@ -31,7 +31,7 @@ npm run docker:down
 
 Launch database first, then the UI.
 
-#### MySQL
+#### MongoDB
 
 ```shell
 docker run -p 27017:27017 -d --restart always --name=mongo mongo:latest
