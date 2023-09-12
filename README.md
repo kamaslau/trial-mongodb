@@ -9,23 +9,11 @@ For desktop GUI, consider [MongoDB Compass](https://www.mongodb.com/products/com
 - Database (MongoDB) [http://localhost:27017](http://localhost:27017)
 - Web UI (mongo-express) [http://localhost:8081](http://localhost:8081)
 
-## Default user for dashboard
+## Default user
 
 None, as default.
 
-## Usage
-
-### TODO Start a service group
-
-Manage service stack with [Docker Compose](https://docs.docker.com/compose/), through NPM (optional).
-
-```shell
-# Start services
-npm run docker:up
-
-# Stop services and prune Docker volumes
-npm run docker:down
-```
+## Startup
 
 ### Start services individually
 
@@ -34,7 +22,7 @@ Launch database first, then the UI.
 #### MongoDB
 
 ```shell
-docker run -p 27017:27017 -d --restart always --name=mongo mongo:latest
+docker run -p 27017:27017 -d --restart always --name=mongo mongodb/mongodb-community-server:latest
 ```
 
 #### mongo-express
@@ -49,10 +37,14 @@ docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express
 
 ```shell
 # Enter container and initiate shell
-docker exec -it mongo sh
+docker exec -it mongo mongosh
 ```
 
 ## Relevent Docker images
 
-- [MongoDB](https://hub.docker.com/_/mongo/)
+- [MongoDB](https://hub.docker.com/r/mongodb/mongodb-community-server)
 - [mongo-express](https://hub.docker.com/_/mongo-express/)
+
+## References
+
+- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/
