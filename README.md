@@ -1,8 +1,8 @@
 # trial-mongodb
 
-A [MongoDB](https://www.mongodb.com/docs/) bootstraper, using [mongo-express](https://github.com/mongo-express/mongo-express) as dashboard UI, and [official Node.js client driver](https://www.mongodb.com/docs/drivers/node/current/quick-start/)。
+A [MongoDB](https://www.mongodb.com/docs/) bootstraper, using [mongo-express](https://github.com/mongo-express/mongo-express) as dashboard UI, and [official Node.js client driver](https://www.mongodb.com/docs/drivers/node/current/quick-start/).
 
-For desktop GUI, consider [MongoDB Compass](https://www.mongodb.com/products/compass)
+For desktop GUI, consider [MongoDB Compass](https://www.mongodb.com/products/compass).
 
 ## Service URL
 
@@ -13,7 +13,7 @@ For desktop GUI, consider [MongoDB Compass](https://www.mongodb.com/products/com
 
 None, as default.
 
-## Startup
+## Usage
 
 ### Start services individually
 
