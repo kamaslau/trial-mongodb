@@ -10,10 +10,10 @@
     "start:dev": "cross-env nodemon"
   },
   "dependencies": {
-    "mongodb": "latest"
+    "mongodb": "^6.2.0"
   },
   "devDependencies": {
-    "@types/node": "latest"
+    "@types/node": "^20.8.9"
   },
   "repository": {
     "type": "git",
