@@ -8,6 +8,7 @@ networks:
 
 services:
   mongo:
+    container_name: mongo
     image: mongodb/mongodb-community-server:latest
     restart: always
     networks:
