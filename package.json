@@ -10,10 +10,10 @@
     "start:dev": "cross-env nodemon"
   },
   "dependencies": {
-    "mongodb": "^6.2.0"
+    "mongodb": "^6.3.0"
   },
   "devDependencies": {
-    "@types/node": "^20.9.0",
+    "@types/node": "^20.9.2",
     "cross-env": "^7.0.3",
     "nodemon": "^3.0.1"
   },
