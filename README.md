@@ -33,6 +33,28 @@ Pass in to link the database container with param `--link database-container-nam
 docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express mongo-express:latest
 ```
 
+### Start using docker compose
+
+Config env variables through .env file
+
+```shell
+cp .env_template .env
+```
+
+Trigger composer
+
+```shell
+docker compose up -d
+```
+
+Update current composed
+
+```shell
+docker compose pull
+docker compose down
+docker compose up -d
+```
+
 ### Further operations
 
 ```shell

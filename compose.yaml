@@ -13,8 +13,9 @@ services:
     restart: always
     networks:
       - backend
+    env_file: .env
     ports:
-      - 27017:27017
+      - ${PORT-27017}:27017
     volumes:
       - type: volume
         source: mongo_data
