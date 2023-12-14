@@ -21,7 +21,7 @@ Launch database first, then the UI.
 
 #### MongoDB
 
-```shell
+```bash
 docker run -p 27017:27017 -d --restart always --name=mongo mongodb/mongodb-community-server:latest
 ```
 
@@ -29,27 +29,24 @@ docker run -p 27017:27017 -d --restart always --name=mongo mongodb/mongodb-commu
 
 Pass in to link the database container with param `--link database-container-name:db` .
 
-```shell
+```bash
 docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express mongo-express:latest
 ```
 
 ### Start using docker compose
 
-Config env variables through .env file:
+Manage service stack with [Docker Compose](https://docs.docker.com/compose/).
 
-```shell
+```bash
+# Initiate .env file
 cp .env_template .env
-```
-
-Trigger composer:
-
-```shell
+# Start services
 docker compose up -d
 ```
 
-Update current composed:
+Update existing composed containers with latest images:
 
-```shell
+```bash
 docker compose pull
 docker compose down
 docker compose up -d
@@ -57,7 +54,7 @@ docker compose up -d
 
 ### Further operations
 
-```shell
+```bash
 # Enter container and initiate shell
 docker exec -it mongo mongosh
 ```
