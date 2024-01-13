@@ -15,6 +15,23 @@ None, as default.
 
 ## Usage
 
+### Start with [Docker Compose](https://docs.docker.com/compose/)
+
+```bash
+# Initiate .env file
+cp .env_template .env
+# Start services
+docker compose up -d
+```
+
+Update existing composed containers with latest images:
+
+```bash
+docker compose pull && \
+docker compose down && \
+docker compose up -d
+```
+
 ### Start services individually
 
 Launch database first, then the UI.
@@ -31,25 +48,6 @@ Pass in to link the database container with param `--link database-container-nam
 
 ```bash
 docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express mongo-express:latest
-```
-
-### Start using docker compose
-
-Manage service stack with [Docker Compose](https://docs.docker.com/compose/).
-
-```bash
-# Initiate .env file
-cp .env_template .env
-# Start services
-docker compose up -d
-```
-
-Update existing composed containers with latest images:
-
-```bash
-docker compose pull && \
-docker compose down && \
-docker compose up -d
 ```
 
 ### Further operations
