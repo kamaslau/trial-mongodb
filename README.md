@@ -47,8 +47,8 @@ docker compose up -d
 Update existing composed containers with latest images:
 
 ```bash
-docker compose pull
-docker compose down
+docker compose pull && \
+docker compose down && \
 docker compose up -d
 ```
 
