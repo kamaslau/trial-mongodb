@@ -13,13 +13,9 @@
     "mongodb": "^6.3.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/node": "^20.11.19",
-=======
-    "@types/node": "^20.11.16",
->>>>>>> 511d7a49d5ee6d39014bc1d31cf5db082f2a9e52
+    "@types/node": "^20.11.20",
     "cross-env": "^7.0.3",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.1.0"
   },
   "repository": {
     "type": "git",
