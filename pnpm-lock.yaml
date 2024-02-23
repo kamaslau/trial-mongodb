@@ -11,8 +11,13 @@ dependencies:
 
 devDependencies:
   '@types/node':
+<<<<<<< HEAD
     specifier: ^20.11.19
     version: 20.11.19
+=======
+    specifier: ^20.11.16
+    version: 20.11.16
+>>>>>>> 511d7a49d5ee6d39014bc1d31cf5db082f2a9e52
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -28,8 +33,13 @@ packages:
       sparse-bitfield: 3.0.3
     dev: false
 
+<<<<<<< HEAD
   /@types/node@20.11.19:
     resolution: {integrity: sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==}
+=======
+  /@types/node@20.11.16:
+    resolution: {integrity: sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==}
+>>>>>>> 511d7a49d5ee6d39014bc1d31cf5db082f2a9e52
     dependencies:
       undici-types: 5.26.5
     dev: true
