@@ -13,7 +13,7 @@
     "mongodb": "^6.5.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.26",
+    "@types/node": "^20.11.30",
     "cross-env": "^7.0.3",
     "nodemon": "^3.1.0"
   },
