@@ -9,12 +9,12 @@ importers:
   .:
     dependencies:
       mongodb:
-        specifier: ^6.9.0
-        version: 6.9.0
+        specifier: ^6.10.0
+        version: 6.10.0
     devDependencies:
       '@types/node':
-        specifier: ^22.7.5
-        version: 22.7.5
+        specifier: ^22.8.7
+        version: 22.8.7
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -27,8 +27,8 @@ packages:
   '@mongodb-js/saslprep@1.1.5':
     resolution: {integrity: sha512-XLNOMH66KhJzUJNwT/qlMnS4WsNDWD5ASdyaSH3EtK+F4r/CFGa3jT4GNi4mfOitGvWXtdLgQJkQjxSVrio+jA==}
 
-  '@types/node@22.7.5':
-    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
+  '@types/node@22.8.7':
+    resolution: {integrity: sha512-LidcG+2UeYIWcMuMUpBKOnryBWG/rnmOHQR5apjn8myTQcx3rinFRn7DcIFhMnS0PPFSC6OafdIKEad0lj6U0Q==}
 
   '@types/webidl-conversions@7.0.2':
     resolution: {integrity: sha512-uNv6b/uGRLlCVmelat2rA8bcVd3k/42mV2EmjhPh6JLkd35T5bgwR/t6xy7a9MWhd9sixIeBUzhBenvk3NO+DQ==}
@@ -138,8 +138,8 @@ packages:
   mongodb-connection-string-url@3.0.0:
     resolution: {integrity: sha512-t1Vf+m1I5hC2M5RJx/7AtxgABy1cZmIPQRMXw+gEIPn/cZNF3Oiy+l0UIypUwVB5trcWHq3crg2g3uAR9aAwsQ==}
 
-  mongodb@6.9.0:
-    resolution: {integrity: sha512-UMopBVx1LmEUbW/QE0Hw18u583PEDVQmUmVzzBRH0o/xtE9DBRA5ZYLOjpLIa03i8FXjzvQECJcqoMvCXftTUA==}
+  mongodb@6.10.0:
+    resolution: {integrity: sha512-gP9vduuYWb9ZkDM546M+MP2qKVk5ZG2wPF63OvSRuUbqCR+11ZCAE1mOfllhlAG0wcoJY5yDL/rV3OmYEwXIzg==}
     engines: {node: '>=16.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.188.0
@@ -264,7 +264,7 @@ snapshots:
     dependencies:
       sparse-bitfield: 3.0.3
 
-  '@types/node@22.7.5':
+  '@types/node@22.8.7':
     dependencies:
       undici-types: 6.19.8
 
@@ -370,7 +370,7 @@ snapshots:
       '@types/whatwg-url': 11.0.3
       whatwg-url: 13.0.0
 
-  mongodb@6.9.0:
+  mongodb@6.10.0:
     dependencies:
       '@mongodb-js/saslprep': 1.1.5
       bson: 6.8.0
