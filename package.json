@@ -4,18 +4,19 @@
   "author": "Lau, Kamas <kamaslau@dingtalk.com> (https://www.kamaslau.com/)",
   "license": "MIT",
   "description": "Trial or micro-service unit of MongoDB, with official Node.js driver.",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "start:dev": "cross-env nodemon"
   },
   "dependencies": {
-    "mongodb": "^6.10.0"
+    "mongodb": "^6.17.0"
   },
   "devDependencies": {
-    "@types/node": "^22.9.0",
+    "@types/node": "^24.0.4",
     "cross-env": "^7.0.3",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.10"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,5 @@
     "url": "https://github.com/kamaslau/trial-mongodb/issues"
   },
   "homepage": "https://github.com/kamaslau/trial-mongodb#readme",
-  "packageManager": "pnpm@9.13.2"
+  "packageManager": "pnpm@10.12.4"
 }
