@@ -1,3 +1,5 @@
+name: trial-mongodb
+
 volumes:
   mongo_data:
 
@@ -11,7 +13,6 @@ services:
     restart: always
     networks:
       - backend
-    env_file: .env
     ports:
       - ${PORT-27017}:27017
     volumes:

@@ -1,5 +1,8 @@
 # trial-mongodb
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Repository size](https://img.shields.io/github/repo-size/kamaslau/trial-mongodb?color=56BEB8)
+
 A [MongoDB](https://www.mongodb.com/docs/) bootstraper, using [mongo-express](https://github.com/mongo-express/mongo-express) as dashboard UI, and [official Node.js client driver](https://www.mongodb.com/docs/drivers/node/current/quick-start/).
 
 For desktop GUI, consider [MongoDB Compass](https://www.mongodb.com/products/compass).
@@ -57,11 +60,8 @@ docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express
 docker exec -it mongo mongosh
 ```
 
-## Relevent Docker images
-
-- [MongoDB](https://hub.docker.com/r/mongodb/mongodb-community-server)
-- [mongo-express](https://hub.docker.com/_/mongo-express/)
-
 ## References
 
 - https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/
+- [MongoDB on DockerHub](https://hub.docker.com/r/mongodb/mongodb-community-server)
+- [mongo-express on DockerHub](https://hub.docker.com/_/mongo-express/)
