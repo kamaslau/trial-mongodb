@@ -14,7 +14,7 @@
     "mongodb": "^7.0.0"
   },
   "devDependencies": {
-    "@types/node": "^25.0.0",
+    "@types/node": "^25.1.0",
     "cross-env": "^10.1.0",
     "nodemon": "^3.1.11",
     "typescript": "^5.9.3"
@@ -27,5 +27,5 @@
     "url": "https://github.com/kamaslau/trial-mongodb/issues"
   },
   "homepage": "https://github.com/kamaslau/trial-mongodb#readme",
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.28.2"
 }
