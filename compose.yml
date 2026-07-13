@@ -8,9 +8,9 @@ networks:
 
 services:
   mongo:
-    container_name: mongo
+    container_name: mongodb
     image: mongodb/mongodb-community-server:latest
-    restart: always
+    restart: unless-stopped
     networks:
       - backend
     ports:

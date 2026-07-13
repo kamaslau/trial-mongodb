@@ -42,7 +42,7 @@ Launch database first, then the UI.
 #### MongoDB
 
 ```bash
-docker run -p 27017:27017 -d --restart always --name=mongo mongodb/mongodb-community-server:latest
+docker run -p 27017:27017 -d --restart unless-stopped --name=mongo mongodb/mongodb-community-server:latest
 ```
 
 #### mongo-express
@@ -50,7 +50,7 @@ docker run -p 27017:27017 -d --restart always --name=mongo mongodb/mongodb-commu
 Pass in to link the database container with param `--link database-container-name:db` .
 
 ```bash
-docker run -p 8081:8081 -d --restart always --link mongo:db --name mongo-express mongo-express:latest
+docker run -p 8081:8081 -d --restart unless-stopped --link mongo:db --name mongo-express mongo-express:latest
 ```
 
 ### Further operations
