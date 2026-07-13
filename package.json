@@ -4,6 +4,10 @@
   "author": "Lau, Kamas <kamaslau@dingtalk.com> (https://www.kamaslau.com/)",
   "license": "MIT",
   "description": "Trial or micro-service unit of MongoDB, with official Node.js driver.",
+  "keywords": [
+    "MongoDB",
+    "Node.js"
+  ],
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
@@ -11,13 +15,13 @@
     "start:dev": "cross-env nodemon"
   },
   "dependencies": {
-    "mongodb": "^7.4.0"
+    "mongodb": "^7.5.0"
   },
   "devDependencies": {
     "@types/node": "^26",
     "cross-env": "^10.1.0",
     "nodemon": "^3.1.14",
-    "typescript": "^6"
+    "typescript": "^7"
   },
   "repository": {
     "type": "git",
